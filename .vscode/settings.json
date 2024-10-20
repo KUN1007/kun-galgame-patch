@@ -1,15 +1,33 @@
 {
   "cSpell.words": [
+    "automd",
+    "autorestart",
     "camelcase",
+    "commonmark",
     "composables",
+    "dompurify",
+    "frontmatter",
+    "Galgame",
+    "gcid",
     "kungalgame",
+    "localforage",
     "Loli",
     "lucide",
+    "maxlength",
+    "milkdown",
+    "mingcute",
+    "moemoepoint",
     "nuxt",
     "Parens",
     "persistedstate",
     "pinia",
-    "typecheck"
+    "precommit",
+    "prosemirror",
+    "tabler",
+    "touid",
+    "typecheck",
+    "unstorage",
+    "vndb"
   ],
   "i18n-ally.localesPaths": ["language"]
 }
