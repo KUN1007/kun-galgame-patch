@@ -11,7 +11,7 @@
     "postinstall": "nuxt prepare",
     "format": "prettier . --write",
     "start": "pm2 start ecosystem.config.js",
-    "stop": "pm2 delete kun-visual-novel",
+    "stop": "pm2 delete kun-visual-novel-patch",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit"

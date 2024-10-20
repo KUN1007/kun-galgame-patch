@@ -1,10 +1,10 @@
 import mongoose from 'mongoose'
 import increasingSequence from '../utils/increasingSequence'
-import type { GalgameResource } from './types/patch-resource'
+import type { PatchResource } from './types/patch-resource'
 
-const GalgameResourceSchema = new mongoose.Schema<GalgameResource>(
+const PatchResourceSchema = new mongoose.Schema<PatchResource>(
   {
-    grid: { type: Number, unique: true },
+    prid: { type: Number, unique: true },
     gid: { type: Number, required: true },
     uid: { type: Number, required: true },
     type: { type: String, default: '' },
@@ -24,23 +24,23 @@ const GalgameResourceSchema = new mongoose.Schema<GalgameResource>(
   { timestamps: { createdAt: 'created', updatedAt: 'updated' } }
 )
 
-GalgameResourceSchema.virtual('user', {
+PatchResourceSchema.virtual('user', {
   ref: 'user',
   localField: 'uid',
   foreignField: 'uid'
 })
 
-GalgameResourceSchema.virtual('game', {
-  ref: 'galgame',
+PatchResourceSchema.virtual('patch', {
+  ref: 'patch',
   localField: 'gid',
   foreignField: 'gid'
 })
 
-GalgameResourceSchema.pre('save', increasingSequence('grid'))
+PatchResourceSchema.pre('save', increasingSequence('prid'))
 
-const GalgameResourceModel = mongoose.model<GalgameResource>(
-  'galgame_resource',
-  GalgameResourceSchema
+const PatchResourceModel = mongoose.model<PatchResource>(
+  'patch_resource',
+  PatchResourceSchema
 )
 
-export default GalgameResourceModel
+export default PatchResourceModel

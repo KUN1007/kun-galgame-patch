@@ -1,9 +1,9 @@
 import type { UserAttributes } from './user'
-import type { Galgame } from './galgame'
+import type { Patch } from './patch'
 
-export interface GalgameResource {
+export interface PatchResource {
   // Essential features
-  grid: number
+  prid: number
   gid: number
   uid: number
   type: string
@@ -21,7 +21,7 @@ export interface GalgameResource {
   likes: number[]
 
   user: UserAttributes[]
-  game: Galgame[]
+  patch: Patch[]
 
   created: Date
   updated: Date

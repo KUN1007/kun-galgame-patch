@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   apps: [
     {
-      name: 'kun-visual-patch',
+      name: 'kun-visual-novel-patch',
       port: 8888,
       cwd: path.join(__dirname),
       instances: 1,

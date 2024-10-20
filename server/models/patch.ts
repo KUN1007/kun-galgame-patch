@@ -45,8 +45,8 @@ PatchSchema.virtual('user', {
   foreignField: 'uid'
 })
 
-GalgameSchema.pre('save', increasingSequence('gid'))
+PatchSchema.pre('save', increasingSequence('pid'))
 
-const GalgameModel = mongoose.model<Galgame>('galgame_patch', GalgameSchema)
+const PatchModel = mongoose.model<Patch>('patch', PatchSchema)
 
-export default GalgameModel
+export default PatchModel

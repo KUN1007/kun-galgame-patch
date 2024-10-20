@@ -1,7 +1,7 @@
 import type { UserAttributes } from './user'
 
-export interface GalgameComment {
-  gcid: number
+export interface PatchComment {
+  pcid: number
   gid: number
   c_uid: number
   to_uid: number
