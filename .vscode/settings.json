@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "camelcase",
+    "composables",
+    "kungalgame",
+    "Loli",
+    "lucide",
+    "nuxt",
+    "Parens",
+    "persistedstate",
+    "pinia",
+    "typecheck"
+  ],
+  "i18n-ally.localesPaths": ["language"]
+}

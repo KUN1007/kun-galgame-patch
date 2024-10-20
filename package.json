@@ -1,0 +1,43 @@
+{
+  "name": "kun-nuxt-template",
+  "private": true,
+  "packageManager": "pnpm@9.12.1",
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier . --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^0.6.0",
+    "@nuxt/icon": "^1.5.6",
+    "@nuxt/image": "^1.8.1",
+    "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxtjs/i18n": "8.5.5",
+    "@nuxtjs/sitemap": "^6.1.2",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.5",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^22.7.6",
+    "dayjs": "^1.11.13",
+    "dayjs-nuxt": "^2.1.11",
+    "eslint": "^9.12.0",
+    "nuxt": "^3.12.4",
+    "nuxt-schema-org": "^3.4.1",
+    "prettier": "^3.3.3",
+    "sass": "^1.80.1",
+    "typescript": "^5.6.3",
+    "vue": "latest",
+    "vue-router": "^4.4.5"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.2",
+    "vue": "^3.5.12"
+  }
+}
