@@ -1,16 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+
   devtools: { enabled: false },
+
   devServer: {
     host: '127.0.0.1',
     port: 1007
   },
+
   modules: [
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/eslint',
-    '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     'nuxt-schema-org',
@@ -18,12 +20,14 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     'dayjs-nuxt'
   ],
+
   imports: {
     dirs: ['./composables', './utils', './store/**/*.ts']
   },
 
   // Frontend
   css: ['~/assets/css/index.scss'],
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -50,29 +54,7 @@ export default defineNuxtConfig({
       sameSite: 'strict'
     }
   },
-  i18n: {
-    langDir: './language',
-    locales: [
-      {
-        code: 'en-us',
-        language: 'en-US',
-        file: 'en.json'
-      },
-      {
-        code: 'zh-cn',
-        language: 'zh-CN',
-        file: 'zh-CN.json'
-      }
-    ],
-    baseUrl: process.env.KUN_SITE_URL,
-    defaultLocale: 'en-us',
-    strategy: 'prefix_except_default',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'kun-language',
-      redirectOn: 'root'
-    }
-  },
+
   colorMode: {
     preference: 'system',
     fallback: 'light',

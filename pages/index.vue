@@ -12,17 +12,6 @@ const stickerLink = computed(
 <template>
   <div class="root">
     <div class="card">
-      <h1>{{ $t('kun') }}</h1>
-
-      <ClientOnly>
-        <NuxtImg :src="stickerLink" />
-      </ClientOnly>
-
-      <p>{{ $t('template') }}</p>
-      <KunButton type="danger" @click="navigateTo(localePath('/kun'))">
-        {{ $t('remake') }}
-      </KunButton>
-
       <SwitchLanguage />
     </div>
   </div>

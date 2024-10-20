@@ -1,10 +1,8 @@
-<script setup lang="ts">
-const localePath = useLocalePath()
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="root">
-    <KunButton @click="navigateTo(localePath('/'))">Moe!</KunButton>
+    <KunButton @click="navigateTo('/')">Moe!</KunButton>
   </div>
 </template>
 
